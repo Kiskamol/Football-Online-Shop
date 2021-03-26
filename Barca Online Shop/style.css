@@ -1,0 +1,158 @@
+body {
+  margin: 0 auto;
+  /* background-image: linear-gradient(45deg, rgba(24, 23, 51, 0.98) 0%, rgba(144, 29, 64, 1) 56%);*/
+  background-color: rgba(24, 23, 51, 0.98);
+  background-image: url("https://assorted.downloads.oppo.com/static/assets/products/fcb/images/2560/pc_bg@3x-a3f933d3301a288e002db5a44b09c472.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+  color: rgb(255, 255, 255);
+}
+.header-box-left {
+  background-color: rgb(195, 4, 4);
+  position: absolute;
+  right: 0;
+  height: 70px;
+  width: 15px;
+  transition: bottom 2s;
+}
+.header:hover > .header-box-left {
+  bottom: 40px;
+}
+.header-box-right {
+  background-color: #10477f;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  height: 70px;
+  width: 15px;
+  transition: top 2s;
+}
+.header:hover > .header-box-right {
+  top: 40px;
+}
+.main {
+  position: relative;
+}
+
+.header {
+  transition: bottom 2s ;
+  padding: 1rem;
+  height: inherit;
+  text-align: center;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: #181733;
+}
+.header img {
+  max-width: 50px;
+  height: 30px;
+}
+.footer {
+  display: flex;
+  height: 10px;
+  font-size: 20px;
+  background-image: linear-gradient(
+    45deg,
+    rgba(24, 23, 51, 0.98) 0%,
+    rgba(144, 29, 64, 1) 56%
+  );
+  margin: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer img {
+  max-width: 100px;
+  margin-top: 20px;
+  height: 20px;
+}
+.footer a {
+  text-decoration: none;
+}
+.main-content {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  position: relative;
+}
+.main-content img {
+  max-width: 500px;
+  margin-top: 20px;
+  height: 150px;
+  background-color: inherit;
+
+}
+
+.item {
+  width: 25.1%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.item a {
+  background-image: linear-gradient(
+    45deg,
+    rgba(24, 23, 51, 0.98) 5%,
+    rgba(144, 29, 64, 1) 97%
+  );
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border: rgba(221, 220, 220, 0.5) solid 1px;
+  border-radius: 2px;
+}
+.item a:hover {
+  background-image: linear-gradient(
+    45deg,
+    rgba(144, 29, 64, 1) 5%,
+    rgba(24, 23, 51, 0.98) 97%
+  );
+  font-size: 15px;
+}
+
+.content {
+  border-radius: 5px;
+  max-width: 350px;
+  border-top: 3px solid #901d40;
+  border-bottom: 3px solid #901d40;
+  text-align: center;
+  height: 350px;
+  margin: 5px auto;
+  background-color: rgba(24, 23, 51, 0.92);
+  box-shadow: 2px 2px 8px 4px rgba(39, 22, 22, 0.609);
+}
+.link-footer {
+  margin-top: 20px;
+}
+.link-footer,
+.footer a:hover {
+  color: rgb(179, 57, 57);
+}
+.face-mask:hover {
+  color: rgb(179, 57, 57);
+}
+.shop-name:hover {
+  color: rgb(179, 57, 57);
+}
+@media screen and (max-width: 1450px) {
+  .main-content {
+    margin-top: 1rem;
+  }
+  .item {
+    width: 100%;
+  }
+  sub {
+    display: none;
+  }
+}
